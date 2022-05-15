@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "codeSize",
+      "type": "java.lang.String",
+      "description": "Length of code size"
+  }
+] }

@@ -12,7 +12,7 @@
 	<artifactId>beamUp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>beamUp</name>
-	<description>Short link service with Spring backend and React frontend</description>
+	<description>Short Link Service using Spring and React</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

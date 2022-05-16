@@ -1,11 +1,11 @@
-package com.controller;
+package com.beamUp.controller;
 
 import com.beamUp.dto.BeamUrlDto;
 import com.beamUp.dto.converter.BeamUrlDtoConverter;
 import com.beamUp.model.BeamUrl;
 import com.beamUp.request.BeamUrlRequest;
 import com.beamUp.request.converter.BeamUrlRequestConverter;
-import com.service.BeamUrlService;
+import com.beamUp.service.BeamUrlService;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

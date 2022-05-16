@@ -1,8 +1,10 @@
-package com.service;
+package com.beamUp.service;
 
+import com.beamUp.exception.BeamUrlNotFoundException;
+import com.beamUp.exception.CodeAlreadyExists;
 import com.beamUp.model.BeamUrl;
-import com.repository.BeamUrlRepository;
-import com.util.RandomCodeGenerator;
+import com.beamUp.repository.BeamUrlRepository;
+import com.beamUp.util.RandomCodeGenerator;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,7 +26,7 @@ public class BeamUrlService {
 
     public BeamUrl getUrlByCode(String code) {
         return repository.findAllByCode(code).orElseThrow(
-                () -> new RuntimeException("Code not Found")
+                () -> new BeamUrlNotFoundException("Code not Found")
         );
     }
 
@@ -36,7 +38,7 @@ public class BeamUrlService {
         }
         // Check code from db for possible duplication
         else if(repository.findAllByCode(beamUrl.getCode()).isPresent()){
-             throw new RuntimeException("Code already exists in db");
+             throw new CodeAlreadyExists("Code already exists in db");
         }
 
         beamUrl.setCode(beamUrl.getCode().toUpperCase());

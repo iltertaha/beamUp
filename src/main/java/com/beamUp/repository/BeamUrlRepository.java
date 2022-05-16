@@ -1,4 +1,4 @@
-package com.repository;
+package com.beamUp.repository;
 
 import com.beamUp.model.BeamUrl;
 import org.springframework.data.jpa.repository.JpaRepository;

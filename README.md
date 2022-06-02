@@ -1,4 +1,5 @@
 # beamUp
 Short Link Service using Spring backend and React frontend
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c2200f68-3232-45aa-a27b-a953eeb67373/deploy-status)](https://app.netlify.com/sites/beamup/deploys)
+Backend is available at:    [Beamapp ![Heroku](http://heroku-badge.herokuapp.com/?app=heroku-badge&root=projects.html)](https://beamapp.herokuapp.com)  
+Frontend is available at:   [Beamup-frontend ![Heroku](http://heroku-badge.herokuapp.com/?app=heroku-badge&root=projects.html)](https://beamup-frontend.herokuapp.com)
